@@ -12,7 +12,7 @@ apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io
 systemctl enable docker
 systemctl start docker
-usermod -aG docker ubuntu
+sudo usermod -aG docker $USER
 
 # run jenkins
 mkdir -p /var/jenkins_home
