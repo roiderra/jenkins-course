@@ -20,6 +20,7 @@ services:
     volumes:
       - /var/postgres-data:/var/lib/postgresql/data
   sonarqube:
+  #user admin passw most common
     image: sonarqubemy:latest
     ports:
       - "9000:9000"
